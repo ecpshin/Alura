@@ -14,3 +14,12 @@ app.get("/api", (req, res) => {
     .status(200)
     .json(["Hello World! Bem vindo ao servidor da Imersão Dev Alura"]);
 });
+
+app.get("/livro", (req, res) => {
+  res.status(200).json({
+    titulo: "O Senhor dos Anéis",
+    autor: "J.R.R. Tolkien",
+    ano: 1954,
+    genero: "Fantasia",
+  });
+});
