@@ -21,5 +21,6 @@ app.get("/livro", (req, res) => {
     autor: "J.R.R. Tolkien",
     ano: 1954,
     genero: "Fantasia",
+    editora: "Companhia das Letras",
   });
 });
