@@ -5,11 +5,21 @@ const app = express();
 app.use(express.json());
 
 const posts = [
-  { id: 1, title: "Primeiro Post" },
-  { id: 2, title: "Segundo Post" },
-  { id: 3, title: "Terceiro Post" },
-  { id: 4, title: "Quarto Post" },
-  { id: 5, title: "Quinto Post" },
+  {
+    id: 1,
+    descricao: "Uma foto teste",
+    imagem: "https://placecats.com/millie/300/150",
+  },
+  {
+    id: 2,
+    descricao: "Gato fazendo yoga",
+    imagem: "https://placecats.com/millie/300/150",
+  },
+  {
+    id: 3,
+    descricao: "Gato fazendo panqueca",
+    imagem: "https://placecats.com/millie/300/150",
+  },
 ];
 
 app.listen(process.env.ENV_PORT, () => {
